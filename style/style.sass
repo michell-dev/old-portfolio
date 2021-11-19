@@ -1,0 +1,1489 @@
+@import "viewports.scss"
+
+
+@include media(">=desktop","<=LGdesktop")
+
+$primary-font: 'Roboto', sans-serif
+$secondary-font: 'Montserrat', sans-serif
+
+$primary-color: #F05D55
+$background-accent-color: #0F083C
+
+html, body
+  background-color: #0A052C
+  scroll-behavior: smooth
+
+body
+  margin: 0
+
+h1
+  font-family: $primary-font
+  color: white
+p
+  font-family: $secondary-font
+  color: white
+
+#deco-dot, #deco-dot-abt, #deco-dot-skl, #deco-dot-wrk, #deco-dot-st
+  color: $primary-color
+
+#deco-header
+  @include media("<=phone")
+    visibility: hidden
+    display: none
+  @include media(">phone","<=425px")
+    visibility: hidden
+    display: none
+  @include media(">=tablet", "<=1200px")
+    visibility: hidden
+    display: none
+  @include media(">=1280px","<=desktop")
+    position: absolute
+    margin-top: -12%
+    margin-left: 247px
+    width: 45%
+  @include media(">=1280px","<=desktop")
+    position: absolute
+    margin-top: -12%
+    margin-left: 248px
+    width: 46%
+  @include media(">desktop","<=LGdesktop")
+    position: absolute
+    margin-top: -7.7%
+    margin-left: 517px
+
+
+#deco-mid
+  @include media("<=phone")
+    visibility: hidden
+    display: none
+  @include media(">phone","<=425px")
+    visibility: hidden
+    display: none
+  @include media(">=tablet", "<=1200px")
+    visibility: hidden
+    display: none
+  @include media(">=1280px","<=desktop")
+    visibility: visible
+    position: absolute
+    margin-left: -0.6%
+    margin-top: 16%
+  @include media(">=1280px","<=desktop")
+    visibility: visible
+    position: absolute
+    margin-left: -0.6%
+    margin-top: 16%
+    width: 100%
+  @include media(">=desktop","<=LGdesktop")
+    visibility: visible
+    position: absolute
+    margin-left: -0.5%
+    margin-top: 16%
+    width: 100%
+
+.header-logo
+  @include media("<=phone")
+    text-align: center
+    margin-top: 150px
+  @include media(">phone","<=425px")
+    text-align: center
+    margin-top: 150px
+  @include media(">=tablet", "<=1200px")
+    text-align: center
+    margin-top: 150px
+  @include media(">=1280px","<=desktop")
+    text-align: left
+    margin-top: 150px
+    margin-left: 200px
+  @include media(">desktop","<=LGdesktop")
+    text-align: left
+    margin-top: 150px
+    margin-left: 200px
+
+#logotype-header
+  @include media("<=phone")
+    width: 70%
+    height: 70%
+    object-fit: contain
+    margin-top: 5%
+  @include media(">phone","<=425px")
+    width: 70%
+    height: 70%
+    object-fit: contain
+    margin-top: 5%
+  @include media(">=tablet", "<=1200px")
+    width: 70%
+    height: 70%
+    object-fit: contain
+    margin-top: 5%
+  @include media(">=1280px","<=desktop")
+    width: 30%
+    height: 30%
+    object-fit: contain
+    margin-top: -5%
+    margin-left: -70px
+  @include media(">desktop","<=LGdesktop")
+    width: 25%
+    height: 25%
+    object-fit: contain
+    margin-left: -60px
+
+#title-name
+  @include media("<=phone")
+    text-align: center
+    margin-top: -4%
+  @include media(">phone","<=425px")
+    text-align: center
+    margin-top: -4%
+  @include media(">=tablet", "<=1200px")
+    text-align: center
+    font-size: 48px
+    margin-top: -2%
+  @include media(">=1280px","<=desktop")
+    text-align: left
+    font-size: 48px
+    margin-left: 170px
+  @include media(">desktop","<=LGdesktop")
+    text-align: left
+    font-size: 58px
+    margin-left: 205px
+
+#title-caption
+  font-family: $primary-font
+  color: white
+  @include media("<=phone")
+    font-size:  10px
+    letter-spacing: 0.195em
+    margin-top: -5%
+    margin-left: -3%
+    text-align: center
+  @include media(">phone","<=425px")
+    font-size:  10px
+    letter-spacing: 0.195em
+    margin-top: -5%
+    margin-left: -3%
+    text-align: center
+  @include media(">=tablet", "<=1200px")
+    font-size:  15px
+    letter-spacing: 0.195em
+    margin-top: -3%
+    margin-left: -1%
+    text-align: center
+  @include media(">=1280px","<=desktop")
+    font-size:  15px
+    letter-spacing: 0.195em
+    margin-top: -2%
+    margin-left: 170px
+    text-align: left
+  @include media(">desktop","<=LGdesktop")
+    font-size:  18px
+    letter-spacing: 0.195em
+    margin-top: -2%
+    margin-left: 205px
+    text-align: left
+
+.splitter-container
+  display: block
+  width: 50%
+  margin-left: auto
+  margin-right: auto
+
+  #splitter-00
+    color: $background-accent-color
+    @include media("<=phone")
+      width: 160px
+      margin-left: -1%
+    @include media(">phone","<=425px")
+      width: 160px
+      margin-left: -1%
+    @include media(">=tablet", "<=1200px")
+      width: 245px
+    @include media(">=1280px","<=desktop")
+      width: 245px
+      margin-left: -23%
+    @include media(">desktop","<=LGdesktop")
+      width: 280px
+      margin-left: -28.5%
+
+#entry-paragraph
+  @include media("<=phone")
+    font-size: 10px
+    display: block
+    width: 50%
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+  @include media(">phone","<=425px")
+    font-size: 10px
+    display: block
+    width: 50%
+    margin-left: auto
+    margin-right: auto
+  @include media(">=tablet", "<=1200px")
+    font-size: 15px
+    display: block
+    width: 35%
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+  @include media(">=1280px","<=desktop")
+    font-size: 15px
+    display: block
+    width: 20%
+    margin-left: 170px
+    margin-right: auto
+    text-align: left
+  @include media(">desktop","<=LGdesktop")
+    font-size: 15px
+    display: block
+    width: 15%
+    margin-left: 205px
+    margin-right: auto
+    text-align: left
+
+#action-button-1
+  border-radius: 100px
+  border: 3px solid  $primary-color
+  font-family: $primary-font
+  background-color: transparent
+  height: 56px
+  color: white
+  letter-spacing: 5%
+  margin-top: 7%
+  @include media("<=phone")
+    font-size: 10px
+    display: block
+    width: 30%
+    margin-left: auto
+    margin-right: auto
+    height: 36px
+  @include media(">phone","<=425px")
+    font-size: 10px
+    display: block
+    width: 30%
+    margin-left: auto
+    margin-right: auto
+    height: 36px
+  @include media(">=tablet", "<=1200px")
+    font-size: 15px
+    display: block
+    width: 30%
+    margin-left: auto
+    margin-right: auto
+    height: 36px
+    letter-spacing: 0.195em
+  @include media(">=1280px","<=desktop")
+    font-size: 15px
+    display: block
+    width: 15%
+    margin-left: 190px
+    margin-top: 35px
+    height: 36px
+    letter-spacing: 0.195em
+  @include media(">desktop","<=LGdesktop")
+    font-size: 15px
+    display: block
+    width: 11%
+    margin-left: 235px
+    margin-top: 35px
+    height: 43px
+    letter-spacing: 0.195em
+
+.about-me-section
+  margin-left: 40px
+  margin-right: 40px
+  margin-bottom: 280px
+  @include media("<=phone")
+    margin-top: 450px
+    font-size: 10px
+    text-align: center
+  @include media(">phone","<=425px")
+    margin-top: 450px
+    font-size: 10px
+    text-align: center
+  @include media(">=tablet", "<=1200px")
+    margin-top: 450px
+    font-size: 15px
+    text-align: center
+  @include media(">=1280px","<=desktop")
+    margin-top: 1000px
+    margin-left: 170px
+    font-size: 15px
+    text-align: left
+    display: inline-block
+    position: relative
+    z-index: 999
+  @include media(">desktop","<=LGdesktop")
+    margin-top: 1500px
+    margin-left: 205px
+    font-size: 15px
+    text-align: left
+    display: inline-block
+    position: relative
+    z-index: 999
+
+
+#about-me-p-01, #about-me-p-02, #about-me-p-03, #about-me-p-04
+  @include media(">=tablet", "<=1200px")
+    text-align: center
+    width: 50%
+    margin-left: auto
+    margin-right: auto
+  @include media(">=1280px","<=desktop")
+    text-align: left
+    width: 40%
+    margin-right: auto
+  @include media(">desktop","<=LGdesktop")
+    text-align: left
+    width: 30%
+    margin-right: auto
+
+#about-me-title
+  @include media("<=phone")
+    font-size: 32px
+  @include media(">phone","<=425px")
+    font-size: 32px
+  @include media(">=tablet", "<=1200px")
+    font-size: 48px
+  @include media(">=1280px","<=desktop")
+    font-size: 48px
+  @include media(">desktop","<=LGdesktop")
+    font-size: 58px
+
+#splitter-01
+  color: $background-accent-color
+  @include media("<=phone")
+    width: 160px
+    margin-top: -17px
+  @include media(">phone","<=425px")
+    width: 160px
+    margin-top: -17px
+  @include media(">=tablet", "<=1200px")
+    width: 220px
+    margin-top: -20px
+  @include media(">=1280px","<=desktop")
+    width: 250px
+    margin-left: 130px
+    margin-top: -20px
+  @include media(">desktop","<=LGdesktop")
+    width: 250px
+    margin-left: 0px
+    margin-top: -20px
+
+#dribbble
+  @include media("<=phone")
+    width: 59px
+    height: 59px
+    margin-right: 25px
+    margin-top: 25px
+  @include media(">phone","<=425px")
+    width: 59px
+    height: 59px
+    margin-right: 25px
+    margin-top: 25px
+  @include media(">=tablet", "<=1200px")
+    width: 59px
+    height: 59px
+    margin-right: 25px
+    margin-top: 25px
+  @include media(">=1280px","<=desktop")
+    width: 59px
+    height: 59px
+    margin-right: 25px
+    margin-top: 25px
+    margin-left: 100px
+  @include media(">desktop","<=LGdesktop")
+    width: 59px
+    height: 59px
+    margin-right: 25px
+    margin-top: 25px
+    margin-left: 100px
+
+#linkedin
+  @include media("<=phone")
+    width: 57px
+    height: 57px
+    margin-left: 25px
+    margin-top: 25px
+  @include media(">phone","<=425px")
+    width: 57px
+    height: 57px
+    margin-left: 25px
+    margin-top: 25px
+  @include media(">=tablet", "<=1200px")
+    width: 57px
+    height: 57px
+    margin-left: 25px
+    margin-top: 25px
+  @include media(">=1280px","<=desktop")
+    width: 57px
+    height: 57px
+    margin-left: 25px
+    margin-top: 25px
+  @include media(">desktop","<=LGdesktop")
+    width: 57px
+    height: 57px
+    margin-left: 25px
+    margin-top: 25px
+
+.skillset-section
+  margin-left: 40px
+  margin-right: 40px
+  @include media("<=phone")
+    text-align: center
+    font-size: 10px
+  @include media(">phone","<=425px")
+    text-align: center
+    font-size: 10px
+  @include media(">=tablet", "<=1200px")
+    text-align: center
+    font-size: 15px
+
+
+#splitter-02
+  color: $background-accent-color
+  @include media(">desktop","<=LGdesktop")
+    width: 290px
+    margin-left: 165px
+    margin-top: -20px
+
+#skillset-title
+  @include media("<=phone")
+    font-size: 32px
+  @include media(">phone","<=425px")
+    font-size: 32px
+  @include media(">=tablet", "<=1200px")
+    font-size: 48px
+  @include media(">=1280px","<=desktop")
+    font-size: 48px
+    margin-left: 130px
+    text-align: left
+  @include media(">desktop","<=LGdesktop")
+    font-size: 58px
+    margin-left: 165px
+    text-align: left
+
+
+#skillset-paragraph
+  @include media(">=tablet", "<=1200px")
+    width: 50%
+    margin-left: auto
+    margin-right: auto
+  @include media(">=1280px","<=desktop")
+    font-size: 15px
+    margin-left: 130px
+    text-align: left
+    width: 20%
+  @include media(">desktop","<=LGdesktop")
+      font-size: 15px
+      margin-left: 165px
+      text-align: left
+      width: 20%
+
+
+.design-skills
+  border: 6px solid #0F083C
+  border-radius: 47px
+  margin-top: 40px
+  @include media("<=phone")
+    height: 308px
+    border-radius: 23.5px
+  @include media(">phone","<=425px")
+    height: 308px
+    border-radius: 23.5px
+  @include media(">=tablet", "<=1200px")
+    height: 400px
+    width: 400px
+    margin-left: auto
+    margin-right: auto
+    border-radius: 23.5px
+  @include media(">=1280px","<=desktop")
+    float: left
+    height: 400px
+    width: 500px
+    margin-left: 30px
+    margin-right: auto
+    border-radius: 23.5px
+  @include media(">=1280px","<=desktop")
+    float: left
+    height: 400px
+    width: 500px
+    margin-left: 55px
+    margin-right: auto
+    border-radius: 23.5px
+  @include media(">desktop","<=LGdesktop")
+    float: left
+    height: 500px
+    width: 650px
+    margin-left: 110px
+    margin-right: auto
+    border-radius: 23.5px
+
+
+#design-container-caption
+  @include media("<=phone")
+    margin-bottom: 50px
+  @include media(">phone","<=425px")
+    margin-bottom: 50px
+  @include media(">=tablet", "<=1200px")
+    margin-bottom: 50px
+  @include media(">=1280px","<=desktop")
+    margin-bottom: 50px
+    text-align: center
+  @include media(">desktop","<=LGdesktop")
+    margin-bottom: 50px
+    text-align: center
+
+.design-skills-1
+  @include media(">=1280px","<=desktop")
+    text-align: center
+  @include media(">desktop","<=LGdesktop")
+    text-align: center
+
+#skill-photoshop, #skill-adobexd
+  @include media("<=phone")
+    position: relative
+    width: 55px
+    height: 55px
+  @include media(">phone","<=425px")
+    position: relative
+    width: 55px
+    height: 55px
+  @include media(">=tablet", "<=1200px")
+    position: relative
+    width: 85px
+    height: 85px
+  @include media(">=1280px","<=desktop")
+    position: relative
+    width: 95px
+    height: 95px
+    margin-left: auto
+    margin-right: auto
+  @include media(">desktop","<=LGdesktop")
+    position: relative
+    width: 115px
+    height: 115px
+    margin-left: auto
+    margin-right: auto
+
+#skill-illustrator
+  @include media("<=phone")
+    position: relative
+    width: 55px
+    height: 55px
+    align-items: center
+    margin-left: 15px
+    margin-right: 15px
+  @include media(">phone","<=425px")
+    position: relative
+    width: 55px
+    height: 55px
+    align-items: center
+    margin-left: 15px
+    margin-right: 15px
+  @include media(">=tablet", "<=1200px")
+    position: relative
+    width: 85px
+    height: 85px
+    align-items: center
+    margin-left: 30px
+    margin-right: 30px
+  @include media(">=1280px","<=desktop")
+    position: relative
+    width: 95px
+    height: 95px
+    align-items: center
+    margin-left: 35px
+    margin-right: 35px
+  @include media(">desktop","<=LGdesktop")
+    position: relative
+    width: 115px
+    height: 115px
+    align-items: center
+    margin-left: 35px
+    margin-right: 35px
+
+.design-skills-2
+  @include media(">=1280px","<=desktop")
+    text-align: center
+  @include media(">desktop","<=LGdesktop")
+    text-align: center
+
+#skill-figma
+  @include media("<=phone")
+    position: relative
+    width: 62px
+    height: 92.5px
+    margin-top: 40px
+  @include media(">phone","<=425px")
+    position: relative
+    width: 62px
+    height: 92.5px
+    margin-top: 40px
+  @include media(">=tablet", "<=1200px")
+    position: relative
+    width: 82px
+    height: 122.5px
+    margin-top: 40px
+  @include media(">=1280px","<=desktop")
+    position: relative
+    width: 82px
+    height: 122.5px
+    margin-top: 40px
+  @include media(">desktop","<=LGdesktop")
+    position: relative
+    width: 102px
+    height: 162.5px
+    margin-top: 40px
+
+.development-skills
+  border: 6px solid #0F083C
+  border-radius: 47px
+  height: 616px
+  margin-top: 40px
+  @include media("<=phone")
+    height: 308px
+    border-radius: 23.5px
+    margin-bottom: 100px
+  @include media(">phone","<=425px")
+    height: 308px
+    border-radius: 23.5px
+    margin-bottom: 100px
+  @include media(">=tablet", "<=1200px")
+    height: 400px
+    width: 400px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 100px
+    border-radius: 23.5px
+  @include media(">=1280px","<=desktop")
+    display: inline-block
+    height: 400px
+    width: 500px
+    margin-left: 100px
+    margin-right: auto
+    margin-bottom: 100px
+    border-radius: 23.5px
+  @include media(">desktop","<=LGdesktop")
+    display: inline-block
+    height: 500px
+    width: 650px
+    margin-left: 265px
+    margin-right: auto
+    margin-bottom: 100px
+    border-radius: 23.5px
+
+#dev-container-caption
+  @include media("<=phone")
+    margin-bottom: 50px
+  @include media(">phone","<=425px")
+    margin-bottom: 50px
+  @include media(">=tablet", "<=1200px")
+    margin-bottom: 50px
+  @include media(">=1280px","<=desktop")
+    text-align: center
+    margin-bottom: 50px
+  @include media(">desktop","<=LGdesktop")
+    text-align: center
+    margin-bottom: 50px
+
+
+.dev-skills-1, .dev-skills-2
+  @include media(">=1280px","<=desktop")
+    text-align: center
+  @include media(">desktop","<=LGdesktop")
+    text-align: center
+
+#skill-html, #skill-sass
+  @include media("<=phone")
+    position: relative
+    width: 55px
+    height: 55px
+  @include media(">phone","<=425px")
+    position: relative
+    width: 55px
+    height: 55px
+  @include media(">=tablet", "<=1200px")
+    position: relative
+    width: 85px
+    height: 85px
+  @include media(">=1280px","<=desktop")
+    position: relative
+    width: 95px
+    height: 95px
+  @include media(">desktop","<=LGdesktop")
+    position: relative
+    width: 115px
+    height: 115px
+
+#skill-css,
+  @include media("<=phone")
+    position: relative
+    width: 55px
+    height: 55px
+    align-items: center
+    margin-left: 15px
+    margin-right: 15px
+  @include media(">phone","<=425px")
+    position: relative
+    width: 55px
+    height: 55px
+    align-items: center
+    margin-left: 15px
+    margin-right: 15px
+  @include media(">=tablet", "<=1200px")
+    position: relative
+    width: 85px
+    height: 85px
+    align-items: center
+    margin-left: 30px
+    margin-right: 30px
+  @include media(">=1280px","<=desktop")
+    position: relative
+    width: 95px
+    height: 95px
+    align-items: center
+    margin-left: 35px
+    margin-right: 35px
+  @include media(">desktop","<=LGdesktop")
+    position: relative
+    width: 115px
+    height: 115px
+    align-items: center
+    margin-left: 35px
+    margin-right: 35px
+
+
+#skill-koala, #skill-bootstrap
+  @include media("<=phone")
+    position: relative
+    width: 55px
+    height: 55px
+    margin-top: 60px
+  @include media(">phone","<=425px")
+    position: relative
+    width: 55px
+    height: 55px
+    margin-top: 60px
+  @include media(">=tablet", "<=1200px")
+    position: relative
+    width: 85px
+    height: 85px
+    margin-top: 60px
+  @include media(">=1280px","<=desktop")
+    position: relative
+    width: 95px
+    height: 95px
+    margin-top: 60px
+  @include media(">desktop","<=LGdesktop")
+    position: relative
+    width: 115px
+    height: 115px
+    margin-top: 60px
+
+#skill-atom
+  @include media("<=phone")
+    position: relative
+    width: 55px
+    height: 55px
+    margin-top: 60px
+    margin-left: 15px
+    margin-right: 15px
+  @include media(">phone","<=425px")
+    position: relative
+    width: 85px
+    height: 85px
+    margin-top: 60px
+    margin-left: 30px
+    margin-right: 30px
+  @include media(">=tablet", "<=1200px")
+    position: relative
+    width: 85px
+    height: 85px
+    margin-top: 60px
+    margin-left: 30px
+    margin-right: 30px
+  @include media(">=1280px","<=desktop")
+    position: relative
+    width: 95px
+    height: 95px
+    margin-top: 60px
+    margin-left: 35px
+    margin-right: 35px
+  @include media(">desktop","<=LGdesktop")
+    position: relative
+    width: 115px
+    height: 115px
+    margin-top: 60px
+    margin-left: 35px
+    margin-right: 35px
+
+#addit-tools-caption
+  @include media(">=1280px","<=desktop")
+    text-align: center
+  @include media(">desktop","<=LGdesktop")
+    text-align: center
+
+.addit-tool-logos
+  @include media(">=1280px","<=desktop")
+    text-align: center
+  @include media(">desktop","<=LGdesktop")
+    text-align: center
+
+#tool-iconfinder, #tool-uigoodies, #tool-coolors, #tool-undraw
+  @include media ("<=phone")
+    position: relative
+    width:  42px
+    height:  42.5px
+    margin: 10px
+  @include media(">phone","<=425px")
+    position: relative
+    width:  42px
+    height:  42.5px
+    margin: 10px
+  @include media(">=tablet", "<=1200px")
+    position: relative
+    width:  54px
+    height:  55px
+    margin: 20px
+  @include media(">=1280px","<=desktop")
+    position: relative
+    width:  74px
+    height:  75px
+    margin: 20px
+  @include media(">desktop","<=LGdesktop")
+    position: relative
+    width:  84px
+    height: 85px
+    margin: 20px
+
+#work-title
+  @include media("<=phone")
+    font-size: 32px
+  @include media(">phone","<=425px")
+    font-size: 32px
+  @include media(">=tablet", "<=1200px")
+    font-size: 48px
+  @include media(">=1280px","<=desktop")
+    font-size: 48px
+    margin-left: 130px
+  @include media(">desktop","<=LGdesktop")
+    font-size: 58px
+    margin-left: 165px
+
+#work-paragraph
+  @include media(">=1280px","<=desktop")
+    margin-left: 130px
+    text-align: left
+    width: 20%
+  @include media(">desktop","<=LGdesktop")
+    margin-left: 165px
+    text-align: left
+    width: 20%
+
+#splitter-03
+  color: $background-accent-color
+  @include media("<=phone")
+    width: 160px
+    margin-top: -17px
+  @include media(">phone","<=425px")
+    width: 160px
+    margin-top: -17px
+  @include media(">=tablet", "<=1200px")
+    width: 220px
+    margin-top: -17px
+  @include media(">=1280px","<=desktop")
+    width: 200px
+    margin-top: -20px
+    margin-left: 130px
+  @include media(">desktop","<=LGdesktop")
+    width: 230px
+    margin-top: -30px
+    margin-left: 165px
+
+.work-section
+  margin-top: 100px
+
+.work-showcase
+  border: 6px solid #0F083C
+  border-radius: 47px
+  height: 616px
+  margin-top: 40px
+  @include media("<=phone")
+    height: 500px
+    border-radius: 23.5px
+    margin-bottom: 100px
+  @include media(">phone","<=425px")
+    height: 500px
+    border-radius: 23.5px
+    margin-bottom: 100px
+  @include media(">=tablet", "<=1200px")
+    height: 730px
+    width: 400px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 100px
+    border-radius: 23.5px
+  @include media(">=1280px","<=desktop")
+    height: 450px
+    width: 1120px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 100px
+    border-radius: 23.5px
+  @include media(">desktop","<=LGdesktop")
+    height: 570px
+    width: 1580px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 100px
+    border-radius: 23.5px
+
+.slideshow-container
+  width: 250px
+  position: relative
+  margin: auto
+  margin-top: 20px
+  @include media(">=1280px","<=desktop")
+    width: 1000px
+  @include media(">desktop","<=LGdesktop")
+    width: 1100px
+    text-align: center
+
+#showcase-image
+  border-radius: 15px
+  @include media("<=phone")
+  width: 250px
+  @include media(">phone","<=425px")
+  width: 250px
+  @include media(">=tablet", "<=1200px")
+    width: 370px
+    margin-left: -25%
+  @include media(">=1280px","<=desktop")
+    float: left
+    width: 50%
+    margin-right: 50px
+  @include media(">desktop","<=LGdesktop")
+    float: left
+    width: 50%
+    margin-right: 250px
+
+#work-1-title
+  @include media(">desktop","<=LGdesktop")
+    text-align: left
+    font-size: 48px
+
+#work-1-desc, #work-1-1-desc
+  @include media(">=tablet", "<=1200px")
+    width: 120%
+    text-align: center
+    margin-left: -20px
+    margin-right: 50px
+  @include media(">desktop","<=LGdesktop")
+    width: 100%
+    text-align: justify
+    margin-left: 20px
+    margin-right: 50px
+
+#web-button
+  @include media("<=phone")
+    width: 160px
+    margin-bottom: 10px
+    font-family: $primary-font
+    border-radius: 50px
+    border: 2px solid $primary-color
+    background-color: transparent
+    color: white
+    height: 30px
+    font-size: 10px
+    letter-spacing: 1px
+    transition: 1s linear
+  @include media(">phone","<=425px")
+    width: 160px
+    margin-bottom: 10px
+    font-family: $primary-font
+    border-radius: 50px
+    border: 2px solid $primary-color
+    background-color: transparent
+    color: white
+    height: 30px
+    font-size: 10px
+    letter-spacing: 1px
+    transition: 1s linear
+  @include media(">=tablet", "<=1200px")
+      width: 200px
+      margin-top: 10px
+      margin-bottom: 10px
+      font-family: $primary-font
+      border-radius: 50px
+      border: 2px solid $primary-color
+      background-color: transparent
+      color: white
+      height: 35px
+      font-size: 15px
+      letter-spacing: 3px
+      transition: 1s linear
+  @include media(">=1280px","<=desktop")
+        width: 200px
+        font-family: $primary-font
+        border-radius: 50px
+        border: 2px solid $primary-color
+        background-color: transparent
+        color: white
+        height: 35px
+        font-size: 15px
+        letter-spacing: 3px
+        transition: 1s linear
+  @include media(">desktop","<=LGdesktop")
+        width: 200px
+        font-family: $primary-font
+        border-radius: 50px
+        border: 2px solid $primary-color
+        background-color: transparent
+        color: white
+        height: 35px
+        font-size: 15px
+        letter-spacing: 3px
+        transition: 1s linear
+
+#web-button:hover
+  @include media("<=phone")
+    width: 180px
+    margin-bottom: 10px
+    font-family: $primary-font
+    border-radius: 50px
+    border: 2px solid $primary-color
+    background-color: $primary-color
+    color: white
+    height: 30px
+    font-size: 10px
+    letter-spacing: 1.3px
+  @include media(">phone","<=425px")
+    width: 180px
+    margin-bottom: 10px
+    font-family: $primary-font
+    border-radius: 50px
+    border: 2px solid $primary-color
+    background-color: $primary-color
+    color: white
+    height: 30px
+    font-size: 10px
+    letter-spacing: 1.3px
+  @include media(">=tablet", "<=1200px")
+      width: 220px
+      margin-bottom: 10px
+      font-family: $primary-font
+      border-radius: 50px
+      border: 2px solid $primary-color
+      background-color: $primary-color
+      color: white
+      height: 35px
+      font-size: 15px
+      letter-spacing: 3.6px
+  @include media(">=1280px","<=desktop")
+        width: 220px
+        font-family: $primary-font
+        border-radius: 50px
+        border: 2px solid $primary-color
+        background-color: $primary-color
+        color: white
+        height: 35px
+        font-size: 15px
+        letter-spacing: 3.6px
+  @include media(">desktop","<=LGdesktop")
+        width: 220px
+        font-family: $primary-font
+        border-radius: 50px
+        border: 2px solid $primary-color
+        background-color: $primary-color
+        color: white
+        height: 35px
+        font-size: 15px
+        letter-spacing: 3.6px
+
+
+#dribbble-button
+  @include media("<=phone")
+    font-family: $primary-font
+    border-radius: 50px
+    border: 2px solid $primary-color
+    background-color: transparent
+    color: white
+    height: 30px
+    font-size: 10px
+    letter-spacing: 1px
+    transition: 1s linear
+  @include media(">phone","<=425px")
+    font-family: $primary-font
+    border-radius: 50px
+    border: 2px solid $primary-color
+    background-color: transparent
+    color: white
+    height: 30px
+    font-size: 10px
+    letter-spacing: 1px
+    transition: 1s linear
+  @include media(">=tablet", "<=1200px")
+      width: 200px
+      font-family: $primary-font
+      border-radius: 50px
+      border: 2px solid $primary-color
+      background-color: transparent
+      color: white
+      height: 35px
+      font-size: 13px
+      letter-spacing: 3px
+      transition: 1s linear
+  @include media(">=1280px","<=desktop")
+        width: 200px
+        margin-top: 10px
+        font-family: $primary-font
+        border-radius: 50px
+        border: 2px solid $primary-color
+        background-color: transparent
+        color: white
+        height: 35px
+        font-size: 13px
+        letter-spacing: 3px
+        transition: 1s linear
+  @include media(">desktop","<=LGdesktop")
+        width: 200px
+        margin-top: 10px
+        font-family: $primary-font
+        border-radius: 50px
+        border: 2px solid $primary-color
+        background-color: transparent
+        color: white
+        height: 35px
+        font-size: 13px
+        letter-spacing: 3px
+        transition: 1s linear
+        text-align: center
+
+
+
+#dribbble-button:hover
+  @include media("<=phone")
+    font-family: $primary-font
+    border-radius: 50px
+    border: 2px solid $primary-color
+    background-color: $primary-color
+    color: white
+    height: 30px
+    font-size: 10px
+    width: 180px
+    letter-spacing: 1.3px
+  @include media(">=tablet", "<=1200px")
+      width: 220px
+      font-family: $primary-font
+      border-radius: 50px
+      border: 2px solid $primary-color
+      background-color: $primary-color
+      color: white
+      height: 35px
+      font-size: 13px
+      letter-spacing: 3.6px
+  @include media(">=1280px","<=desktop")
+        width: 220px
+        font-family: $primary-font
+        border-radius: 50px
+        border: 2px solid $primary-color
+        background-color: $primary-color
+        color: white
+        height: 35px
+        font-size: 13px
+        letter-spacing: 3.6px
+  @include media(">desktop","<=LGdesktop")
+        width: 220px
+        font-family: $primary-font
+        border-radius: 50px
+        border: 2px solid $primary-color
+        background-color: $primary-color
+        color: white
+        height: 35px
+        font-size: 13px
+        letter-spacing: 3.6px
+
+.mySlides
+  display: none
+  border-radius: 20px
+  @include media(">desktop","<=LGdesktop")
+    margin-left: -18%
+
+#dotsLG
+  @include media(">desktop","<=LGdesktop")
+    margin-right: 15%
+    margin-top: 2%
+
+.dot
+  cursor: pointer
+  height: 8px
+  width: 8px
+  margin: 0 2px
+  background-color: $primary-color
+  border-radius: 50%
+  display: inline-block
+  transition: background-color 0.6s ease
+  transition: 1 linear
+  @include media(">=tablet", "<=1200px")
+    cursor: pointer
+    height: 13px
+    width: 13px
+    margin: 0 2px
+    background-color: $primary-color
+    border-radius: 50%
+    display: inline-block
+    transition: background-color 0.6s ease
+    transition: 1 linear
+  @include media(">=1280px","<=desktop")
+      cursor: pointer
+      height: 13px
+      width: 13px
+      margin: 0 2px
+      background-color: $primary-color
+      border-radius: 50%
+      display: inline-block
+      transition: background-color 0.6s ease
+      transition: 1 linear
+  @include media(">desktop","<=LGdesktop")
+      cursor: pointer
+      height: 13px
+      width: 13px
+      margin: 0 2px
+      background-color: $primary-color
+      border-radius: 50%
+      display: inline-block
+      transition: background-color 0.6s ease
+      transition: 1 linear
+      text-align: center
+
+
+.active, .dot:hover
+  background-color: white
+  height: 10px
+  width: 10px
+  @include media(">=tablet", "<=1200px")
+    height: 15px
+    width: 15px
+  @include media(">=1280px","<=desktop")
+    height: 15px
+    width: 15px
+  @include media(">desktop","<=LGdesktop")
+    height: 15px
+    width: 15px
+    text-align: center
+
+
+.fade
+  -webkit-animation-name: fade
+  -webkit-animation-duration: 1.5s
+  animation-name: fade
+  animation-duration: 1.5s
+
+@-webkit-keyframes fade
+  from
+    opacity: .4
+
+  to
+    opacity: 1
+
+@keyframes fade
+  from
+    opacity: .4
+
+  to
+    opacity: 1
+
+#site-title
+  @include media("<=phone")
+    font-size: 32px
+  @include media(">phone","<=425px")
+    font-size: 32px
+  @include media(">=tablet", "<=1200px")
+    font-size: 48px
+  @include media(">=1280px","<=desktop")
+    font-size: 48px
+    margin-left: 130px
+  @include media(">desktop","<=LGdesktop")
+    font-size: 48px
+    margin-left: 165px
+
+#splitter-04
+  color: $background-accent-color
+  @include media("<=phone")
+    width: 160px
+    margin-top: -17px
+  @include media(">phone","<=425px")
+    width: 160px
+    margin-top: -17px
+  @include media(">=tablet", "<=1200px")
+    width: 530px
+    margin-top: -17px
+  @include media(">=1280px","<=desktop")
+    margin-left: 130px
+    margin-top: -20px
+    width: 530px
+  @include media(">desktop","<=LGdesktop")
+    margin-left: 165px
+    margin-top: -20px
+    width: 490px
+
+.fav-sites
+  border: 6px solid #0F083C
+  border-radius: 47px
+  height: 750px
+  margin-top: 40px
+  text-align: center
+  @include media("<=phone")
+    height: 820px
+    border-radius: 23.5px
+    margin-bottom: 100px
+  @include media(">phone","<=425px")
+    height: 820px
+    border-radius: 23.5px
+    margin-bottom: 100px
+  @include media(">=tablet", "<=1200px")
+    height: 1200px
+    width: 400px
+    border-radius: 23.5px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 100px
+  @include media(">=1280px","<=desktop")
+    height: 1750px
+    width: 1120px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 100px
+  @include media(">desktop","<=LGdesktop")
+    height: 2100px
+    width: 1580px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 100px
+
+#site-paragraph
+  @include media(">=1280px","<=desktop")
+    margin-left: 130px
+  @include media(">desktop","<=LGdesktop")
+    margin-left: 165px
+
+#website-01,
+  margin-top: 20px
+  border-radius: 15px
+  @include media(">=1280px","<=desktop")
+    width: 65%
+  @include media(">desktop","<=LGdesktop")
+    width: 60%
+
+#splitter-05
+  color: $background-accent-color
+  @include media("<=phone")
+    width: 80%
+  @include media(">phone","<=425px")
+    width: 80%
+#website-02
+  margin-top: 20px
+  border-radius: 15px
+  @include media(">=1280px","<=desktop")
+    width: 65%
+  @include media(">desktop","<=LGdesktop")
+    width: 60%
+
+#website-03
+  margin-top: 20px
+  border-radius: 15px
+  @include media(">=1280px","<=desktop")
+    width: 65%
+  @include media(">desktop","<=LGdesktop")
+    width: 60%
+
+#graphic-footer
+  @include media("<=phone")
+    display: none
+    visibility: hidden
+  @include media(">phone","<=425px")
+    display: none
+    visibility: hidden
+  @include media(">=tablet", "<=1200px")
+    width: 80%
+  @include media(">desktop","<=LGdesktop")
+    margin-left: 145px
+    margin-top: 500px
+  @include media(">=1280px","<=desktop")
+    width: 95%
+    margin-left: 25px
+    margin-top: 300px
+
+#dribbble-02
+  @include media("<=phone")
+    width: 21px
+    height: 21px
+    margin-top: 15px
+  @include media(">phone","<=425px")
+    width: 21px
+    height: 21px
+    margin-top: 15px
+  @include media(">=tablet", "<=1200px")
+    width: 31px
+    height: 31px
+    margin-top: 15px
+  @include media(">desktop","<=LGdesktop")
+    margin-left: 145px
+    width: 41px
+    height: 41px
+  @include media(">=1280px","<=desktop")
+    width: 41px
+    height: 41px
+    margin-left: 25px
+
+#linkedin-02
+  @include media("<=phone")
+    width: 21px
+    height: 21px
+    margin-top: 15px
+  @include media(">phone","<=425px")
+    width: 21px
+    height: 21px
+    margin-top: 15px
+  @include media(">=tablet", "<=1200px")
+    width: 31px
+    height: 31px
+    margin-left: 15px
+    margin-top: 15px
+  @include media(">desktop","<=LGdesktop")
+    margin-left: 25px
+    width: 41px
+    height: 41px
+  @include media(">=1280px","<=desktop")
+    width: 41px
+    height: 41px
+    margin-left: 20px
+
+#email
+  @include media(">desktop","<=LGdesktop")
+    float: right
+    margin-right: 165px
+    font-weight: 900
+  @include media(">=1280px","<=desktop")
+    float: right
+    margin-right: 35px
+    font-weight: 900
+
+#footer-bottom-graphic
+  @include media("<=phone")
+    display: none
+    visibility: hidden
+  @include media(">phone","<=425px")
+    display: none
+    visibility: hidden
+  @include media(">=tablet", "<=1200px")
+    display: none
+    visibility: hidden
+  @include media(">desktop","<=LGdesktop")
+    width: 105.4%
+    margin-left: -50px
+    margin-bottom: -12px
+  @include media(">=1280px","<=desktop")
+    width: 108%
+    margin-left: -48px
+    margin-bottom: -11px
